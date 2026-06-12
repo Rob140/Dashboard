@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Sidebar from "./Seidbar";
-import { Outlet } from "react-router";
+// import { Outlet } from "react-router-dom";
 import styles from "./dashboard.module.css";
 
 const DashboardLayout = () => {
@@ -9,9 +9,10 @@ const DashboardLayout = () => {
     <>
       <div className={styles.layout}>
         <Sidebar className={styles.bar} />
-        <Header />
+        <Header className={styles.headerBar} />
         <main className={styles.main}>
-          <Outlet />
+          {/* <Outlet /> */}
+          outlet
         </main>
       </div>
     </>

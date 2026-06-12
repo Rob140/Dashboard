@@ -1,24 +1,23 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router";
+// import {
+//   createBrowserRouter,
+//   createRoutesFromElements,
+//   Route,
+//   RouterProvider,
+// } from "react-router-dom";
 import DashboardLayout from "./DashboardLayout/DashboardLayout";
 
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route Path="/" element={<DashboardLayout />}>
-        <Route />
-      </Route>,
-    ),
-  );
+  // const router = createBrowserRouter(
+  //   createRoutesFromElements(
+  //     <Route path="/" element={<DashboardLayout />}>
+  //       <Route index element={<Main />} />
+  //     </Route>,
+  //   ),
+  // );
 
   return (
-    <>
-      <RouterProvider router={router} />;
-    </>
+    <DashboardLayout />
+    //  <RouterProvider router={router} />;
   );
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './header.module.css'
 
-const Header = () => {
+const Header = ({ className }) => {
+  const combinedClassName = [styles.header, className].filter(Boolean).join(" ");
   return (
-    <header className={styles.header}>
+    <header className={combinedClassName}>
       Header
     </header>
   )
