@@ -14,8 +14,8 @@ const DashboardLayout = () => {
   return (
     <>
       <div className={styles.layout}>
-        <Sidebar className={styles.bar} isOpen={isSidebarOpen}  />
-        <Header className={styles.headerBar} onToggleMenu={toggleSidebar} />
+        <Sidebar className={styles.bar} />
+        <Header className={styles.headerBar} />
         <main className={styles.main}>
           {/* <Outlet /> */}
           outlet
