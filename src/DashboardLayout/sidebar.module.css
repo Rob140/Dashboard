@@ -1,5 +1,4 @@
-.bar {
-  height: 300px;
-  width: 300px;
-  background-color: red;
+.sidebar {
+  display: flex;
+  flex-direction: column;
 }
