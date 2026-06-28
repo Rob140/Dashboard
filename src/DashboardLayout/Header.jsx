@@ -1,9 +1,7 @@
-import styles from "./header.module.css";
+// import styles from "./header.module.css";
 
-const Header = ({ onToggleMenu, className }) => {
-  const headerClassName = [styles.header, className].filter(Boolean).join(" ");
-
-  return <header className={headerClassName}></header>;
+const Header = ({ prop }) => {
+  return <header onClick={prop}>header 😂</header>;
 };
 
 export default Header;

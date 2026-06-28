@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import Header from "./Header";
 import Sidebar from "./Seidbar";
@@ -11,15 +10,19 @@ const DashboardLayout = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
   return (
     <>
       <div className={styles.layout}>
-        <Sidebar className={styles.bar} />
-        <Header className={styles.headerBar} />
-        <main className={styles.main}>
-          {/* <Outlet /> */}
-          outlet
-        </main>
+        <div
+          className={`${styles.Sidebar} ${isSidebarOpen ? styles.active : styles.open}`}
+        >
+          <Sidebar />
+        </div>
+        <div className={styles.header}>
+          <Header prop={toggleSidebar} />
+        </div>
+        <main className={styles.main}>{/* <Outlet /> */}🍔 outlet</main>
       </div>
     </>
   );

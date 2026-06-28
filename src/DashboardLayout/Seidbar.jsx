@@ -1,7 +1,7 @@
 import styles from "./sidebar.module.css";
 
-const Seidbar = ({ className, isOpen }) => {
-  return <aside className={styles.Seidbar}></aside>;
+const Seidbar = () => {
+  return <aside>sidebar</aside>;
 };
 
 export default Seidbar;
