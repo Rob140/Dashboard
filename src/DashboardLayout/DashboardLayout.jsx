@@ -21,6 +21,7 @@ const DashboardLayout = () => {
         </div>
         <div className={styles.header}>
           <Header prop={toggleSidebar} />
+          
         </div>
         <main className={styles.main}>{/* <Outlet /> */}🍔 outlet</main>
       </div>
