@@ -3,6 +3,7 @@ import Header from "./Header";
 import Sidebar from "./Seidbar";
 // import { Outlet } from "react-router-dom";
 import styles from "./dashboard.module.css";
+import { Outlet } from "react-router";
 
 const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -21,9 +22,10 @@ const DashboardLayout = () => {
         </div>
         <div className={styles.header}>
           <Header prop={toggleSidebar} />
-          
         </div>
-        <main className={styles.main}>{/* <Outlet /> */}🍔 outlet</main>
+        <main className={styles.main}>
+          <Outlet />
+        </main>
       </div>
     </>
   );
