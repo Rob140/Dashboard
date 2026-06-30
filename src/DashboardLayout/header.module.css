@@ -22,7 +22,8 @@
   gap: 0.6rem;
   font-weight: 700;
   color: #111827;
-  font-size: 1.05rem;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .menu {
@@ -35,28 +36,24 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 20px;
+  color: white;
+  background: #1c1d1f;
 }
 
 .menu:hover {
-  background: #f3f4f6;
+  background: #333539;
 }
-/* .par {
-  position: relative;
-} */
 
 .userMenu {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  /* position: absolute;
-  z-index: 1;
-  top: 60px; */
 }
 
 .userMenu a {
   text-decoration: none;
-  color: #374151;
+  color: white;
   padding: 0.35rem 0.6rem;
   border-radius: 8px;
   font-weight: 600;
@@ -64,21 +61,12 @@
 
 .userMenu a:hover {
   background: #f3f4f6;
+  color: black;
 }
 
 /* Responsive: hide menu on wide screens, show on small screens */
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   .menu {
     display: none;
   }
 }
-
-/* @media (max-width: 720px) {
-  .container {
-    padding: 0.5rem 0.75rem;
-  }
-  .userMenu a {
-    padding: 0.4rem 0.5rem;
-    font-size: 0.95rem;
-  }
-} */

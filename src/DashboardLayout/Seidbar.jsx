@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 // import { CiSettings } from "react-icons/ci";
 // import { SiSimpleanalytics } from "react-icons/si";
 
@@ -9,24 +9,55 @@ const Seidbar = () => {
   return (
     <aside>
       <ul className={styles.container}>
-        <Link className={styles.Link}>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            `${styles.Link} ${isActive ? styles.active : ""}`
+          }
+        >
           <li className={styles.list}>overview</li>
-        </Link>
-        <Link to="analytics" className={styles.Link}>
+        </NavLink>
+        <NavLink
+          to="analytics"
+          className={({ isActive }) =>
+            `${styles.Link} ${isActive ? styles.active : ""}`
+          }
+        >
           <li className={styles.list}>analytics</li>
-        </Link>
-        <Link to="users" className={styles.Link}>
+        </NavLink>
+        <NavLink
+          to="users"
+          className={({ isActive }) =>
+            `${styles.Link} ${isActive ? styles.active : ""}`
+          }
+        >
           <li className={styles.list}>users</li>
-        </Link>
-        <Link to="reports" className={styles.Link}>
+        </NavLink>
+        <NavLink
+          to="reports"
+          className={({ isActive }) =>
+            `${styles.Link} ${isActive ? styles.active : ""}`
+          }
+        >
           <li className={styles.list}>reports</li>
-        </Link>
-        <Link to="settings" className={styles.Link}>
+        </NavLink>
+        <NavLink
+          to="settings"
+          className={({ isActive }) =>
+            `${styles.Link} ${isActive ? styles.active : ""}`
+          }
+        >
           <li className={styles.list}>settings</li>
-        </Link>
-        <Link to="helps" className={styles.Link}>
+        </NavLink>
+        <NavLink
+          to="helps"
+          className={({ isActive }) =>
+            `${styles.Link} ${isActive ? styles.active : ""}`
+          }
+        >
           <li className={styles.list}>help</li>
-        </Link>
+        </NavLink>
       </ul>
     </aside>
   );

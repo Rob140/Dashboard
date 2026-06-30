@@ -8,12 +8,18 @@
 }
 
 .Link {
-  background-color: rgb(10, 196, 118);
   border-radius: 20px;
   padding: 10px 20px;
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(25, 28, 26);
+  background-color: rgb(10, 235, 62);
+}
+.active {
+  color: white;
+  background-color: rgb(21, 140, 25);
 }
 .list {
-  list-style: none;
   font-size: 20px;
+  list-style-type: none;
 }
